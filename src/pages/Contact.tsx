@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <AnimatedSection delay={100}>
-              <Card className="flex flex-col items-center p-6 text-center h-full">
+              <Card className="flex flex-col items-center p-6 text-center h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <div className="bg-isentric-800/80 p-3 rounded-full mb-4">
                   <Phone className="h-6 w-6 text-isentric-300" />
                 </div>
@@ -49,7 +49,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={200}>
-              <Card className="flex flex-col items-center p-6 text-center h-full">
+              <Card className="flex flex-col items-center p-6 text-center h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <div className="bg-isentric-800/80 p-3 rounded-full mb-4">
                   <Mail className="h-6 w-6 text-isentric-300" />
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={300}>
-              <Card className="flex flex-col items-center p-6 text-center h-full">
+              <Card className="flex flex-col items-center p-6 text-center h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <div className="bg-isentric-800/80 p-3 rounded-full mb-4">
                   <MapPin className="h-6 w-6 text-isentric-300" />
                 </div>
@@ -71,7 +71,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={400}>
-              <Card className="flex flex-col items-center p-6 text-center h-full">
+              <Card className="flex flex-col items-center p-6 text-center h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <div className="bg-isentric-800/80 p-3 rounded-full mb-4">
                   <Clock className="h-6 w-6 text-isentric-300" />
                 </div>
@@ -177,7 +177,7 @@ const Contact = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <AnimatedSection delay={100}>
-              <Card className="p-6">
+              <Card className="p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <h3 className="text-lg font-semibold text-white mb-2">How quickly can you integrate your solutions?</h3>
                 <p className="text-isentric-300">
                   Most of our solutions can be integrated within 2-4 weeks, depending on the complexity of your systems and requirements.
@@ -186,7 +186,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={200}>
-              <Card className="p-6">
+              <Card className="p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <h3 className="text-lg font-semibold text-white mb-2">Do you offer custom solutions?</h3>
                 <p className="text-isentric-300">
                   Yes, we specialize in creating tailored solutions that address your specific business needs and challenges.
@@ -195,7 +195,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={300}>
-              <Card className="p-6">
+              <Card className="p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <h3 className="text-lg font-semibold text-white mb-2">How secure are your payment solutions?</h3>
                 <p className="text-isentric-300">
                   Our payment solutions adhere to the highest industry security standards, including PCI-DSS compliance and end-to-end encryption.
@@ -204,7 +204,7 @@ const Contact = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={400}>
-              <Card className="p-6">
+              <Card className="p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
                 <h3 className="text-lg font-semibold text-white mb-2">Do you provide ongoing support?</h3>
                 <p className="text-isentric-300">
                   Absolutely! We offer comprehensive 24/7 support and maintenance services to ensure your systems are always running optimally.

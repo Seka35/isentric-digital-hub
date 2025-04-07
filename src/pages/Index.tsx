@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Play, ArrowRight, MessageSquare, Bot, Wallet, Shield, Mail, Headphones } from "lucide-react";
@@ -119,159 +118,129 @@ const Index = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatedSection delay={100}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <MessageSquare className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>Messaging Solutions</CardTitle>
-                  <CardDescription>
-                    Target your audience with personalized messaging
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Reach customers with timely and relevant messaging campaigns that drive engagement and conversions.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/solutions/messaging-solutions">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/solutions/messaging-solutions" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <MessageSquare className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>Messaging Solutions</CardTitle>
+                    <CardDescription>
+                      Target your audience with personalized messaging
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Reach customers with timely and relevant messaging campaigns that drive engagement and conversions.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
             
             <AnimatedSection delay={200}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <Bot className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>AI Chatbots</CardTitle>
-                  <CardDescription>
-                    Intelligent conversational experiences
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Deploy AI-powered chatbots that provide instant customer support and streamline business processes.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/solutions/ai-chatbots">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/solutions/ai-chatbots" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <Bot className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>AI Chatbots</CardTitle>
+                    <CardDescription>
+                      Intelligent conversational experiences
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Deploy AI-powered chatbots that provide instant customer support and streamline business processes.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
             
             <AnimatedSection delay={300}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <Wallet className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>Digital Wallets</CardTitle>
-                  <CardDescription>
-                    Secure and convenient payment options
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Enable seamless transactions with digital wallet solutions that prioritize security and user experience.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/products/digital-banking">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/products/digital-banking" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <Wallet className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>Digital Wallets</CardTitle>
+                    <CardDescription>
+                      Secure and convenient payment options
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Enable seamless transactions with digital wallet solutions that prioritize security and user experience.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
             
             <AnimatedSection delay={400}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <Shield className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>Cybersecurity</CardTitle>
-                  <CardDescription>
-                    Protect your digital assets
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Comprehensive security solutions to safeguard your business against evolving cyber threats.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/products/cybersecurity">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/products/cybersecurity" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <Shield className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>Cybersecurity</CardTitle>
+                    <CardDescription>
+                      Protect your digital assets
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Comprehensive security solutions to safeguard your business against evolving cyber threats.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
             
             <AnimatedSection delay={500}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <Mail className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>Email Marketing</CardTitle>
-                  <CardDescription>
-                    Drive engagement with targeted campaigns
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Create and deliver compelling email campaigns that resonate with your audience and drive results.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/products/electronic-direct-mailing">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/products/electronic-direct-mailing" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <Mail className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>Email Marketing</CardTitle>
+                    <CardDescription>
+                      Drive engagement with targeted campaigns
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Create and deliver compelling email campaigns that resonate with your audience and drive results.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
             
             <AnimatedSection delay={600}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
-                    <Headphones className="h-8 w-8 text-isentric-300" />
-                  </div>
-                  <CardTitle>Call Center Tools</CardTitle>
-                  <CardDescription>
-                    Streamline customer support
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-isentric-300">
-                    Enhance customer service with advanced call center tools that improve efficiency and satisfaction.
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Link to="/products/call-centre-solutions">
-                    <Button variant="link" className="text-isentric-300 hover:text-white p-0 flex items-center">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+              <Link to="/products/call-centre-solutions" className="block h-full">
+                <Card className="h-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:border-blue-500">
+                  <CardHeader>
+                    <div className="bg-isentric-800 p-3 rounded-md inline-block mb-4">
+                      <Headphones className="h-8 w-8 text-isentric-300" />
+                    </div>
+                    <CardTitle>Call Center Tools</CardTitle>
+                    <CardDescription>
+                      Streamline customer support
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-isentric-300">
+                      Enhance customer service with advanced call center tools that improve efficiency and satisfaction.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimatedSection>
           </div>
           
@@ -382,12 +351,18 @@ const Index = () => {
             </p>
           </AnimatedSection>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6].map(item => <AnimatedSection key={item} delay={item * 100} className="flex justify-center">
-                <div className="h-12 w-32 bg-isentric-800/50 rounded-md flex items-center justify-center shadow-sm border border-isentric-700/30">
-                  <div className="text-isentric-400 font-medium">Client Logo</div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+            {[1, 2, 3, 4, 5, 6].map(item => (
+              <AnimatedSection key={item} delay={item * 100} className="flex justify-center">
+                <div className="h-28 w-64 flex items-center justify-center">
+                  <img 
+                    src={`/partnaire/logo${item}.png`}
+                    alt={`Partner Logo ${item}`}
+                    className="w-full h-full object-contain transition-all duration-300 hover:scale-110 hover:brightness-125"
+                  />
                 </div>
-              </AnimatedSection>)}
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
